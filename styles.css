@@ -1,0 +1,1166 @@
+*{
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+body, html {
+    max-width: 100%;
+}
+
+.back{
+    height: 100vh;
+    max-width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1491924778227-f225b115dd5f?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+ }
+ .back::after{
+    content: "";
+    background: #3b654d;
+    position: absolute;
+    top: 0;
+    opacity: .75;
+    height:100vh ;
+    width: 100%;
+    transition: all .25s ease;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.panel {
+    height: 180px ;
+    max-width: 100%;
+    background-color: #3b654d ;
+    position: relative;
+    z-index: 1;
+}
+
+.panel-top {
+    height: 130px ;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%; 
+    background-color:  #355347;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo {
+    height: 120px;
+    width: auto;
+    align-items: center;
+}
+
+.texty {
+    align-items: center;
+    height: 20px;
+    display:inline-block;
+    color: #f7f7f7;
+    font-size: 18px;
+    margin-left: 50px;
+    text-decoration: none; 
+}
+
+.text-down {
+    font-size: 17px;
+    color: #ba8a5c ;
+    text-decoration: none;
+}
+
+.social-icons {
+    position: relative;
+    display: flex; /* Зробити іконки контейнером Flexbox */
+    width: auto;
+    align-items: center;
+    gap: 20px; /* Відстань між іконками */
+    margin-left: 50px;
+}
+
+.social-icons a {
+    text-decoration: none; /* Забрати підкреслення з тексту посилань */
+    color:#f7f7f7; /* Колір іконок (чорний) */
+}
+
+.social-icons i {
+    font-size: 45px; /* Великий розмір іконок */
+}
+
+.panel-lower {
+    height: 50px ;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #ba8a5c;
+    display: inline-block;
+    display: flex; /* Використання Flexbox для вирівнювання */
+    justify-content: center; /* Вирівнювання по горизонталі по центру */
+    align-items: center;
+    color:  #f1f1f1;
+}
+
+.panel-lower a{
+    color: inherit;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.link_ {
+    position: relative;
+    transition: all .25s ease;
+}
+
+.link_::after{
+    content: "";
+    background: #355347;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    transform: scaleX(0); 
+    transition: all .25s ease;
+}
+.link_:hover{
+    color:#355347 ;
+}
+.link_:hover::after{
+    transform: scaleX(1);
+}
+
+.container-title{
+    display: grid;
+    place-items: center;
+    height: 60vh;
+}
+.title{ 
+    text-shadow: 2px 2px 4px #000;
+    color: #fff; 
+    font-size: 40px;
+    font-family:'Trebuchet MS', sans-serif, cursive;
+    z-index: 1;
+    position: absolute;
+    width: auto;
+    opacity: .8;
+    padding: 10px;
+    transform: skew();
+        	height: auto;
+        	-webkit-transform: skew(-25deg);
+        	-moz-transform: skew(-25deg);
+        	-o-transform: skew(-25deg);
+        	background:#ba8a5c;
+} 
+.container-phrase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.phrase{
+    text-shadow: 2px 2px 4px #000;
+    color: #fff; 
+    font-size: 15px;
+    font-family:'Trebuchet MS', sans-serif, cursive;
+    position:absolute;
+    z-index: 1;
+    margin-bottom: 270px;
+
+}
+ .container-button1{
+    display: flex;
+    justify-content: center;
+   
+    
+ }
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 4px solid #f7f7f7 ;
+    background-color:rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    text-decoration: none;
+    color: #f7f7f7;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 1;
+}
+.contact-button:hover {
+    background-color:#355347; /* Колір при наведенні мишкою */
+    color: #f1f1f1; /* Колір тексту при наведенні мишкою */
+}
+
+.container-2{
+    background-color: #3b654d;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+.img1{
+    height: 550px;
+    width: 380px;
+    margin-left: 200px;
+    background-color: #ba8a5c;
+    border-radius: 3;
+    border: 8px double ;
+}
+
+.area{
+    background-color: #ba8a5c;
+    min-height: 520px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 150px;
+    margin-left: 50px ;
+    opacity: .8;
+    color: #f1f1f1;
+
+}
+
+.area h2{
+    text-shadow: 2px 2px 4px #000;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.area p{
+    font-size: 18px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+.area-in1{
+    margin-left: 20px;
+    display: flex;
+
+}
+
+.img-1{
+    height: 50px;
+}
+
+.area-in1 p{
+    font-size: 16px;
+    color: #f1f1f1;
+    width: 250px;
+    margin-left: 20px;
+}
+
+.img-2{
+    height: 50px;
+    margin-left: 40px;
+}
+.area-in2{
+    margin-left: 20px;
+    display: flex;
+}
+.img-3{
+    height: 50px;
+    /* margin-top: 10px; */
+}
+.area-in2 p{
+    font-size: 16px;
+    color: #fff;
+    width: 250px;
+    margin-left: 20px;
+}
+.img-4{
+    height: 50px;
+    margin-left: 40px;
+}
+.container-3 {
+    background-color: #3b654d;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Змінено з justify-content на align-items */
+    justify-content: space-between;
+    text-align: center; /* Додано цей рядок */
+    padding: 20px; /* Додано для відступів */
+}
+.container-3 h2{
+    color: #f7f7f7;
+    text-shadow: 2px 2px 4px #000;
+    
+    
+}
+.container-3 p{
+    font-size: 18px;
+    color: #f1f1f1;
+    margin-top: 20px;
+  
+}
+.photo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Чотири стовпці рівної ширини */
+    justify-content: center; /* стовпці по центру */
+    gap: 10px; /* проміжок між фото */
+}
+.service-img1{
+    margin: 10px;
+    height: 280px;
+    width: 320px;
+    
+}
+.service-img2{
+    margin: 10px;
+    height: 280px;
+    width: 320px;
+    
+}
+.service-img3{
+    margin: 10px;
+    height: 280px;
+    width: 320px;
+    
+}
+.service-img4{
+    margin: 10px;
+    height: 280px;
+    width: 320px;
+    
+}
+
+.container-button2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: auto;
+    margin-bottom: 10px;
+    
+ }
+
+ .service-button {
+    padding: 10px;
+    border: 4px solid #f7f7f7;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    text-decoration: none;
+    color: #f7f7f7;
+    border-radius: 2px;
+    
+}
+.service-button:hover {
+    background-color:#355347; /* Колір при наведенні мишкою */
+    color: #f1f1f1; /* Колір тексту при наведенні мишкою */
+}
+
+/* .trapezoid1 {
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    width: 320px;
+    padding: 20px 0; 
+    background:#ba8a5c; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); 
+    
+} */
+.trap-text {
+    color: #f1f1f1;
+    font-size: 16px;
+}
+/* .trapezoid2 {
+    position: absolute;
+    bottom: 8px;
+    left: 310px;
+    margin-left: 40px;
+    width: 320px;
+    padding: 20px 0px; 
+    background:#ba8a5c; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);  
+}
+.trapezoid3 {
+    position: absolute;
+    bottom: 8px;
+    left: 650px;
+    margin-left: 40px;
+    width: 320px;
+    padding: 20px 0px; 
+    background:#ba8a5c; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); 
+}
+ .trapezoid4 {
+    position: absolute;
+    bottom: 8px;
+    left: 990px;
+    margin-left: 40px;
+    width: 320px;
+    padding: 20px 0px; 
+    background:#ba8a5c; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); 
+} */
+
+.container-4 {
+    background-color: #3b654d;
+    min-height: 80vh;
+    padding: 20px; /* Додано для відступів */
+}
+.container-4 h2{
+    color: #f7f7f7;
+    text-shadow: 2px 2px 4px #000;
+    
+    
+}
+.paragrapf{
+    font-size: 18px; 
+    color: #f1f1f1;
+    margin: 20px;
+} 
+.team-container{
+    
+    padding: 20px; /* Додано для відступів */ 
+    background-color: #ba8a5c;
+    margin: 10px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Чотири стовпці рівної ширини */
+    justify-content: center; /* стовпці по центру */
+    gap: 20px; /* проміжок між фото */
+}
+.a1 img {
+    margin: 10px;
+    height: 260px;
+    width: 290px;
+}
+
+.a2 img {
+    margin: 10px;
+    height: 260px;
+    width: 290px;
+}
+.a3 img {
+    margin: 10px;
+    height: 260px;
+    width: 290px;
+}
+.a4 img {
+    margin: 10px;
+    height: 260px;
+    width: 290px;
+}
+.name{
+    font-size: 22px;
+    color: #f7f7f7;
+    text-shadow: 2px 2px 4px #000;
+    margin-left: 10px;
+}
+
+.work{
+    font-size:16px ;
+    font-style: italic;
+    opacity: 0.8;
+    margin-left: 10px;
+    color: #f7f7f7;
+    margin-top: 10px;
+}
+.icons{
+    position: relative;
+    display: flex; /* Зробити іконки контейнером Flexbox */
+    width: auto;
+    gap: 10px; /* Відстань між іконками */
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+
+
+.icons a {
+    text-decoration: none; 
+    color:#f7f7f7; 
+}
+
+.icons i {
+    font-size: 30px; 
+}
+
+
+.footer{
+    height: 80vh;
+    background-color: #355347;
+    
+}
+
+.footer-panel {
+    height: 100px ;
+    width: 100%;
+    background-color: #ba8a5c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  #f1f1f1;
+    
+}
+.foot-img1, .foot-img2, .foot-img3,.foot-img4,
+.foot-img5, .foot-img6,.foot-img7{
+    height: 70px;
+    width: auto;
+    margin: 0 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 100%;
+    margin: 30px;
+    padding: 0 15px;
+}
+
+.footer-section {
+    
+    margin-left: 50px;
+    width: 20%;
+}
+.footer-section h3 {
+    color: #f1f1f1;
+}
+.footer-section p, .footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    line-height: 1.6;
+}
+.footer-section a:hover {
+    color: #fff;
+}
+.logo {
+
+    display: flex;
+}
+.logo-foot{
+    height: 150px;
+    width: auto;
+}
+
+.icons-foot{
+    position: relative;
+    display: flex; /* Зробити іконки контейнером Flexbox */
+    width: auto;
+    gap: 30px; /* Відстань між іконками */
+    margin-top: 20px;
+}
+
+.icons-foot a {
+    text-decoration: none; /* Забрати підкреслення з тексту посилань */
+    color:#f7f7f7; 
+}
+
+.icons-foot i {
+    font-size: 40px; /* Великий розмір іконок */
+}
+
+.footer-section1 {
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 20%;
+}
+.footer-section1 h3 {
+    color: #f1f1f1;
+}
+.footer-section1 p, .footer-section1 a {
+    color: #ccc;
+    text-decoration: none;
+    line-height: 1.6;
+}
+.footer-section1 a:hover {
+    color: #fff;
+}
+.news {
+    height: 30px;
+    width: auto;
+    margin: 5px;
+} 
+
+.footer-section2 {
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 10%;
+}
+.footer-section2 h3 {
+    color: #f1f1f1;
+    margin-bottom: 10px;
+}
+.footer-section2 a {
+    color: #ccc;
+    text-decoration: none;
+    line-height: 1.9;
+}
+.footer-section2 a:hover {
+    color: #fff;
+}
+
+
+.footer-section3 {
+    margin-right: 40px;
+    margin-left: 20px;
+    width: 20%;
+    
+   
+}
+.footer-section3 h3 {
+    color: #f1f1f1;
+}
+
+.gallery{
+    padding-top: 10px;
+    height: 60px;
+    width: 60px;
+    display: inline-block; /* Make the images inline so they appear in a row */
+    margin-right: 5px;
+    
+}
+.subscribe{
+    color: #f1f1f1;
+    font-size: 20px;
+    margin-top: 40px;  
+    margin-bottom: 10px;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    margin-right: 5px;
+}
+.subscribe-form button {
+    padding: 8px;
+    border: 2px solid #f7f7f7 ;
+    background-color:rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    text-decoration: none;
+    color: #f7f7f7;
+    border-radius: 3px;
+}
+
+.subscribe-form button:hover {
+    background-color:#355347; /* Колір при наведенні мишкою */
+    color: #f1f1f1; /* Колір тексту при наведенні мишкою */
+}
+
+
+/* ***************************************************AДАПТИВ ******************************************************** */
+/* ***************************************************AДАПТИВ ******************************************************** */
+/* ***************************************************AДАПТИВ ******************************************************** */
+
+/* Для ПК (1280px) */
+@media screen and (max-width: 1280px) {
+    /* Стилі для ПК */
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+    .body{
+      max-width: 100%;
+    }
+    .img1{
+        margin-left: 110px;
+    }
+    .area{
+        width: 500px;
+    }
+    .area-in2{
+        display: none;
+    }
+    .container-3{
+        height: 130vh;
+    }
+    .photo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Два стовпці з однаковою шириною */
+        grid-template-rows: repeat(2, 1fr); /* Два рядки з однаковою висотою */
+        grid-gap: 5px; /* Відступи між елементами */
+    } 
+   
+    .trapezoid1,.trapezoid2,.trapezoid3,.trapezoid4 {
+        display: none;
+    }
+    .team-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Два стовпці з однаковою шириною */
+        grid-template-rows: repeat(2, 1fr); /* Два рядки з однаковою висотою */
+        grid-gap: 5px; /* Відступи між елементами */
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .footer{
+        height: 110vh;
+    }
+  }
+  
+    /* *******************************************Для нетбуків і планшетів (1024px) ********************************************* */
+
+  @media screen and  (max-width: 1024px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+    
+    .social-icons{
+        display: none;
+    }
+    .img1{
+        margin-left: 10px;
+    }
+    .area{
+        width: 500px;
+        margin: 10px;
+    }
+    .area-in2{
+        display: none;
+    }
+    .container-3{
+        max-width: 100%;
+        height: 130vh;
+    }
+    .photo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Два стовпці з однаковою шириною */
+        grid-template-rows: repeat(2, 1fr); /* Два рядки з однаковою висотою */
+        grid-gap: 5px; /* Відступи між елементами */
+    } 
+   
+    .trapezoid1,.trapezoid2,.trapezoid3,.trapezoid4 {
+        display: none;
+    }
+    .team-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Два стовпці з однаковою шириною */
+        grid-template-rows: repeat(2, 1fr); /* Два рядки з однаковою висотою */
+        grid-gap: 5px; /* Відступи між елементами */
+        width: 70%;
+        margin: 0px 15%;
+        max-width: 100%;
+    }
+    .foot-img6{
+        display: none;
+    }
+    .foot-img7{
+        display: none;
+    }
+    
+    .footer{
+        height: 120vh;
+        max-width: 100%;
+    }
+    .footer-container{
+        padding: 0, 20px;
+    }
+    .logo-foot{
+        width: 230px;
+        height: auto;
+    }
+  }
+  
+  
+   /* ****************************************** Для планшетів (768px) ********************************************* */
+
+  @media screen and (max-width: 768px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+    .logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: 80%;
+        height: 100px; 
+    }
+    .panel-top {
+        flex-direction: column; /* Розміщуємо елементи в колонку */
+        height: auto; /* Знімаємо фіксовану висоту */
+        align-items: center; /* Вирівнюємо по центру по горизонталі */
+        justify-content: center;
+    }
+   
+   .texty, .text-down {
+    text-align: center;
+    margin-left: 0;
+    padding: 5px;
+}
+    .social-icons{
+        display: none;
+    }
+    .panel-lower{
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Встановлюємо режим в колонку */
+        
+    }
+    .panel-lower a {
+        padding: 10px; /* Зменшуємо відстань між посиланнями */
+    }
+   
+    .title{
+        display: none;
+    } 
+    .container-phrase{
+        display: none;
+    }
+    .phrase{
+        display: none;
+    }
+
+    .container-2 {
+        background-color: #3b654d;
+        height: 200vh;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Розташовуємо фото по центру вертикально і горизонтально */
+        flex-direction: column; /* Змінюємо напрямок на колонку */
+    }
+    .img1 {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 20px;
+        height: 500px; /* Зменшуємо розмір фото ще більше */
+        width: 80%;  /* Зменшуємо розмір фото ще більше */
+    }
+
+    .area {
+        margin-top: 40px;
+        width: 90%;
+        height: 600px;
+        margin-left:5% ;
+        margin-right:5% ;
+    }
+    .area-in2{
+        display: flex;
+    }
+    .container-3{
+        height: 130vh;
+        max-width: 100%;
+    }
+    .photo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Два стовпці з однаковою шириною */
+        grid-template-rows: repeat(2, 1fr); /* Два рядки з однаковою висотою */
+        grid-gap: 5px; /* Відступи між елементами */
+    } 
+   
+    .trapezoid1,.trapezoid2,.trapezoid3,.trapezoid4 {
+        display: none;
+    }
+
+    .team-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Два стовпці з однаковою шириною */
+        grid-template-rows: repeat(2, 1fr); /* Два рядки з однаковою висотою */
+        grid-gap: 5px; /* Відступи між елементами */
+        width: 90%;
+        margin: 0px 5%;
+    }
+    .footer-container{
+        margin: 10px;
+        padding: 0 10px;
+    }
+    .foot-img5{
+        display: none;
+    }
+    .footer{
+        height: 85vh;
+    }
+    .logo-foot{
+        width: 180px;
+        height: auto;
+    }
+    .p2-foot{
+        display: none;
+    }
+    .footer-section1{
+        display: none;
+    }
+    .input{
+        margin-bottom: 10px;
+        width: 120px;
+    }
+
+  }
+
+
+  /* ******************************************Для смартфонів (480px) ********************************************* */
+  
+  @media screen and (max-width: 480px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+    .logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: 80%;
+        height: 100px;
+
+    }
+    .panel-top{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Встановлюємо режим в колонку */
+        text-align: center; /* Вирівнюємо текст по центру */
+    }
+    
+    .texty, .text-down {
+        text-align: center;
+        margin-left: 0;
+        padding: 5px;
+    }
+    .social-icons{
+        display: none;
+    }
+    
+    
+   
+    .panel-lower{
+        width: 80%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Встановлюємо режим в колонку */
+        text-align: center; /* Вирівнюємо текст по центру */
+    }
+    .panel-lower a {
+        padding: 10px; /* Зменшуємо відстань між посиланнями */
+    }
+    
+    .title{
+        display: none;
+    }
+    .container-phrase{
+        display: none;
+    }
+    .phrase{
+        display: none;
+    }
+    .container-2 {
+        background-color: #3b654d;
+        height: 210vh;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Розташовуємо фото по центру вертикально і горизонтально */
+        flex-direction: column; /* Змінюємо напрямок на колонку */
+    }
+    .img1 {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 20px;
+        height: auto; /* Зменшуємо розмір фото ще більше */
+        width: 80%;  /* Зменшуємо розмір фото ще більше */
+    }
+
+    .area {
+        margin-top: 20px;
+        width: 90%;
+        margin-left:5% ;
+        margin-right:5% ;
+    }
+    .area-in2{
+        display: none;
+    }
+    .container-3{
+        height: 230vh;
+    }
+    .photo{
+        display: grid;
+        grid-template-columns: 1fr; /* Один стовпець */
+        grid-template-rows: repeat(4, 1fr); /* Чотири рядки з однаковою висотою */
+        grid-gap: 10px; /* Відступи між елементами */
+    }
+    .team-container{
+        display: grid;
+        grid-template-columns: 1fr; /* Один стовпець */
+        grid-template-rows: repeat(4, 1fr); /* Чотири рядки з однаковою висотою */
+        grid-gap: 10px; /* Відступи між елементами */
+        width: 70%;
+        margin-left:  15%;
+        margin-right:  15%;
+    }
+    .footer-container{
+        padding: 0 5px;
+        margin: 10px;
+    }
+    .footer{
+        height: 115vh;
+    }
+    .foot-img4{
+        display: none;
+    }
+    .logo-foot{
+        width: 120px;
+        height: auto;
+    }
+    .p2-foot{
+        display: none;
+    }
+    .input{
+        width: 100px;
+        margin-bottom: 10px;
+    }
+  }
+  
+  /* ****************************************** Для малих смартфонів (320px) ********************************************* */
+  
+  @media screen and (max-width: 320px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+    .body{
+      max-width: 100%;
+    }
+    .logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: 80%;
+        height: auto;
+
+    }
+    .social-icons{
+        display: none;
+    }
+    .panel-top{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Встановлюємо режим в колонку */
+        text-align: center; /* Вирівнюємо текст по центру */
+    }
+    
+    .texty, .text-down {
+        text-align: center;
+        margin-left: 0;
+        padding: 5px;
+    }
+    .panel-lower{
+        width: 80%;
+        height: 300px;
+      
+    }
+    .title{
+        display: none;
+    }
+    
+    .container-phrase{
+        display: none;
+    }
+    .phrase{
+        display: none;
+    }
+    
+    .contact-button {
+        display: none;
+    }
+    .container-2 {
+        background-color: #3b654d;
+        height: 170vh;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Розташовуємо фото по центру вертикально і горизонтально */
+        flex-direction: column; 
+    }
+    .img1c{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img1 {
+        margin-left: 10%;
+        margin-right: 10%;
+        height: auto; 
+        width: 80%; 
+    }
+
+    .area {
+        width: 90%;
+        height: auto;
+        margin-left:5% ;
+        margin-right:5% ;
+        margin-top: 20px;
+    }
+
+    .img-1, .img-2 {
+        height: 15px; 
+    }
+
+    .area-in1, .area-in2{
+        display: none;
+    }
+    .container-3{
+        height: 230vh;
+    }
+    .photo{
+        display: grid;
+        grid-template-columns: 1fr; /* Один стовпець */
+        grid-template-rows: repeat(4, 1fr); /* Чотири рядки з однаковою висотою */
+        grid-gap: 10px; /* Відступи між елементами */
+    }
+  .service-img1, .service-img2, .service-img3, .service-img4 {
+    margin: 10px;
+  }
+  .team-container{
+    display: grid;
+    grid-template-columns: 1fr; /* Один стовпець */
+    grid-template-rows: repeat(4, 1fr); /* Чотири рядки з однаковою висотою */
+    grid-gap: 10px; /* Відступи між елементами */
+}
+    .ph1,.ph2, .ph3, .ph4 {
+        display: none;
+    }
+    .footer{
+        height: 100vh;
+    }
+    .foot-img1, .foot-img2, .foot-img3{
+        height: 50px;
+        margin: 0 10px;
+    }
+    .footer-container{
+        margin: 10px;
+        margin-left: 5px;
+    }
+    .footer-section{
+        display: none;
+    }
+    .footer-section2{
+        margin-left: 60px;
+    }
+    .icons-foot{
+        margin-top:450px;
+        
+    }
+    .form { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
